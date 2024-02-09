@@ -1,11 +1,33 @@
-commit 0253c227ff84e6f4ac5da5202ddfd312e4f55503 (HEAD -> main)
-Author: aholychild <aholychild@gmail.com>
-Date:   Fri Feb 9 12:53:45 2024 +0900
+C:\Users\Owner> mkdir git_challenge
 
-    日本語訳を追記
+C:\Users\Owner> cd git_challenge
 
-commit 802732e71f186a282c845664e3c775bb879c1be3 (HEAD -> main)
+C:\Users\Owner\git_challenge> git init
+Initialized empty Git repository in C:/Users/Owner/git_challenge/.git/
+
+C:\Users\Owner\git_challenge> git add hello_world.txt
+
+C:\Users\Owner\git_challenge> git commit -m "日本語訳を追記"
+[main (root-commit) f7c04ab] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\Owner\git_challenge> git mv hello_world.txt .\move_test
+
+C:\Users\Owner\git_challenge> git commit -m "hello_world.txtを追加"
+[main 02ac193] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hello_world.txt => move_test/hello_world.txt (100%)
+
+C:\Users\Owner\git_challenge> git log
+commit 02ac1932a6fe79b898d3692316132b2aa3f4a7d2 (HEAD -> main)
 Author: aholychild <aholychild@gmail.com>
-Date:   Fri Feb 9 13:02:09 2024 +0900
+Date:   Fri Feb 9 19:56:35 2024 +0900
 
     hello_world.txtを追加
+
+commit f7c04abc83f92ab5fa8d904f12392b41e68527fc
+Author: aholychild <aholychild@gmail.com>
+Date:   Fri Feb 9 19:53:17 2024 +0900
+
+    日本語訳を追記
